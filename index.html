@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Template Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Overlock|Source+Sans+Pro:300" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="main-header">
+                <div class="nav-toggle" onclick="toggleNav()">
+                    <div class="burger burger1"></div>
+                    <div class="burger burger2"></div>
+                    <div class="burger burger3"></div>
+                </div>
+
+                <div class="logo">
+                    <img src="img/ji-logo1.png" alt="DashJi Logo" class="logo__image">
+                    <p class="logo__site">dashji.com</p>
+                </div>
+
+                <div class="site-title">
+                    <h1>Components</h1>
+                </div>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <div class="menu-close" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+
+                <div class="nav-menu">
+                    <h2 class="menu-title">Buttons</h2>
+                    <ul>
+                        <li><a href="button-1.html">Button 1</a></li>
+                        <li><a href="#">Button 2</a></li>
+                        <li><a href="#">Button 3</a></li>
+                        <li><a href="#">Button 4</a></li>
+                        <li><a href="#">Button 5</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="main-page">
+            <section>
+                <div class="button__container">
+                    <a href="#" class="button button_work">
+                        view our work
+                        <span class="button_arrow"></span>
+                    </a>
+                    
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script>
+            function toggleNav() {
+                var mainNav = document.getElementById("mainNav");
+                mainNav.classList.toggle("open");
+            }
+        </script>
+        
+    </body>
+
+
+</html>
